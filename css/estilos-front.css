@@ -1,0 +1,97 @@
+#portada{padding:85px 0 25px;display:flex;align-items:center;flex-direction:column;min-height:100vh;justify-content:space-around;border-bottom:5px solid var(--c2)}
+#portada .isologo{cursor:pointer;margin-bottom:2.5em;font-size:1.2em}
+#portada #main-logo{padding:70px 100px;border:1px solid #eee;box-shadow:0 0 50px 25px rgba(240,255,255,.3);border-radius:10px;max-width:600px;background:radial-gradient(rgba(255,255,255,1)40%,rgba(255,255,255,0.7)100%)}
+#portada .isologo h2{text-align:right;font-size:1.235em;position:absolute;right:.25em;bottom:-2em}
+#portada .isologo .logo{transition:transform 1s ease}
+#portada .isologo:hover .logo{transform:scale(1.05)}
+.bg-perspective{background-image:url(../img/persp-2p-b.png);background-size:contain;background-position:center bottom}
+
+.section-icon{width:100%;max-width:150px;height:auto;max-height:100px;overflow:visible;margin-bottom:13px}
+.section-icon g{transform-origin:center}
+#prox-icon g{transition:transform 2s ease}
+#prox:hover #prox-icon g:nth-child(1n){transform:rotateZ(1080deg)}
+#prox:hover #prox-icon g:last-child{transform:rotateZ(90deg)}
+#hacemos-icon g{transition:transform .8s ease}
+#hacemos-icon g:last-child{transition-delay:.4s}
+#hacemos:hover #hacemos-icon g:nth-child(1n){transform:translateY(115px)}
+#hacemos:hover #hacemos-icon g:last-child{transform:translateY(-115px)}
+#somos-icon{margin-bottom:5px}
+#somos-icon g{transition:transform .6s ease}
+#somos-icon g:nth-child(1n){transition-delay:.6s}
+#somos-icon g:nth-child(2n){transition-delay:0}
+#somos-icon g:nth-child(3n){transition-delay:.3s}
+#somos:hover #somos-icon g{transform:translateY(-5px)}
+#somos-icon g,#somos-icon rect{transition:transform .6s ease}
+#somos-icon g:nth-child(1n){transition-delay:0}
+#somos-icon g:nth-child(2n){transition-delay:.6s}
+#somos-icon g:nth-child(3n){transition-delay:.3s}
+#somos:hover #somos-icon g{transform:translateY(-5px)}
+.section-icon rect{transform-origin:center}
+#somos:hover #somos-icon rect{transform:scaleY(.3)}
+#somos-icon rect:nth-child(1n){transition-delay:.6s;transform-origin:20.5% 0}
+#somos-icon rect:nth-child(2n){transition-delay:0;transform-origin:50% -0}
+#somos-icon rect:nth-child(3n){transition-delay:.3s;transform-origin:79.5% 0}
+#contacto-icon{transition:transform 2s ease;transform-origin:50% 55.5%}
+#contacto-icon g{transition:transform 2s ease}
+#contacto-icon g:nth-child(1n){transform-origin:81.7% 73.6%}
+#contacto-icon g:nth-child(2n){transform-origin:18.3% 73.6%}
+#contacto-icon g:nth-child(3n){transform-origin:50% 18.76%}
+#contacto:hover #contacto-icon{transform:rotateZ(360deg)}
+#contacto:hover #contacto-icon g{transform:rotateZ(-360deg) scale(1.35)}
+
+#prox{padding:60px 0}
+#prox .flex{justify-content:space-evenly;flex-wrap:wrap}
+#prox article,#somos article{width:100%;max-width:420px;margin:20px}
+#prox article{box-shadow:0 5px 10px 0 rgba(0,0,0,0.3);border-radius:10px;transition:transform .5s ease,box-shadow .5s ease-out;border:3px solid;border-top:none}
+#prox article section{border-top:1px solid}
+#prox article:before{content:"";height:100%;position:absolute;left:calc(60% - 2px);border-left:4px solid;top:0}
+#prox article p{margin:5px 10px 18px}
+#prox article h5,#prox article ul{padding:5px}
+#prox article .curso-titulo{min-height:80px;align-items:center;padding:0 10px;border-radius:8px 8px 0 0;transition:box-shadow .4s ease;text-shadow:0 0 4px rgba(255,255,255,.2)}
+#prox article .curso-titulo h3{line-height:1em;font-size:16pt;font-weight:400}
+#prox article .curso-datos{width:40%;padding:0 0 20px}
+#prox article .curso-contenido{width:60%}
+.curso-contenido h4,#prox article .curso-datos h5:first-child{font-size:13pt;padding:10px 0;border-bottom:1px solid}
+.curso-datos h5:first-child{font-weight:400;letter-spacing:.1em}
+.curso-datos h5:nth-child(2){font-weight:400;border-bottom:1px solid}
+#prox .info-btn{position:absolute;bottom:-30px;padding:6px 0 0;border-radius:50%;height:55px;width:55px;border:4px solid;right:calc(40% - 27.5px);transition:transform .3s ease,background-color .3s ease;cursor:pointer}
+#prox .curso-titulo:hover{box-shadow:inset 0 0 40px 0 rgba(255,255,255,.6)}
+#prox article:hover{transform:scale(1.05);box-shadow:0 15px 15px 0 rgba(0,0,0,0.1)}
+#prox .info-btn:hover{transform:scale(1.1);background-color:var(--c2)}
+
+.bloque{margin:0;padding:40px;position:relative;border:2px solid;border-radius:10px;max-width:410px}
+#somos{overflow:hidden}
+#somos section{display:flex}
+#somos article{padding:20px;margin:0;margin-top:-23px}
+#somos article:before{content:"";width:150vw;height:0;position:absolute;left:calc(-50vw);border-top:2px solid var(--c2);top:116px}
+#somos article .bloque{letter-spacing:.05em;margin-top:40px;border-color:var(--c2);min-height:430px;padding-bottom:20px}
+#somos article div:before{content:"";height:40px;position:absolute;left:calc(50% - 1px);border-left:2px solid var(--c2);top:-43px}
+#somos article div:after{content:"";height:8px;width:8px;position:absolute;left:calc(50% - 10px);border:5px solid var(--c1);top:-11px;border-radius:50%;background:var(--cf)}
+#somos article h3{font-size:1.6em;letter-spacing:.04em;font-weight:400;border-bottom:1px solid var(--c1);margin-bottom:20px;padding-bottom:20px}
+#somos img:first-child{border-radius:50%;border:4px solid var(--c1);position:relative;z-index:1}
+
+#about{padding:15px 60px;margin:10px;border:2px solid var(--c2);max-width:600px;position:relative;border-radius:10px;box-shadow:0 0 50px 10px rgba(240,255,255,.5);background:rgba(255,255,255,.8)}
+#about p{font-size:12pt;text-indent:20px;line-height:1.1em;margin:10px 0}
+#about p#tagline{margin:20px 0 15px;font-size:14pt}
+#redes{height:75px;margin-top:15px}
+.social-icon{width:100%;max-width:50px}
+.social-icon h5{font-weight:300;line-height:1.2em;height:34px;margin-top:0;transition:all .6s .4s;padding:4px 0;width:110px;margin-left:-30px;opacity:0;display:flex;align-items:center;justify-content:center}
+.social-icon:hover h5{margin-top:5px;opacity:1;z-index:1}
+.social-icon svg{width:100%;height:auto;display:block;transition:background-color .4s ease;border-radius:4px}
+.social-icon:nth-child(2n){margin:0 20px}
+#twtr-icon{background-color:var(--c1)}
+#fb-icon{background-color:var(--c3)}
+#insta-icon{background-color:var(--c2)}
+#twtr-icon:hover{background-color:#1DA1F2}
+#fb-icon:hover{background-color:#1977F3}
+#insta-icon:hover{background-color:#d32d8e}
+
+@media screen and (max-width: 600px) {
+#prox article,#somos article{margin:20px 5px}
+#portada #main-logo{padding:30px;font-size:2.5vw}
+#portada #about p{font-size:10pt}
+.bloque{padding:20px}
+}
+@media screen and (max-width: 500px) {
+#about{padding:15px 20px}
+}
